@@ -161,10 +161,7 @@ http://localhost:3000
 
 | Item | Link |
 |---|---|
-| Code Repository | `<paste code repository link here>` |
-| Documentation Repository | `<paste documentation repository link here>` |
-| Supabase Project | `<paste Supabase project link here>` |
-| Database Schema / ERD | `<paste database documentation link here>` |
+| Code Repository | https://github.com/KaifHalak/AD-Project |
 
 ## Testing
 
