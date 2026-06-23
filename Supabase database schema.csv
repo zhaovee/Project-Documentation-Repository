@@ -1,0 +1,94 @@
+table_name,column_name,data_type,is_nullable,column_default
+booking_process,id,bigint,NO,null
+booking_process,booking_type,text,NO,null
+booking_process,booking_id,bigint,NO,null
+booking_process,reviewer_id,bigint,NO,null
+booking_process,reviewer_role,text,NO,null
+booking_process,decision,text,NO,null
+booking_process,rejection_reason,text,YES,null
+booking_process,decision_at,timestamp with time zone,NO,now()
+booking_process,remarks,text,YES,null
+booking_process,created_at,timestamp with time zone,NO,now()
+booking_quotations,id,bigint,NO,null
+booking_quotations,created_at,timestamp with time zone,NO,now()
+booking_quotations,updated_at,timestamp with time zone,NO,now()
+booking_quotations,quotation_number,text,NO,null
+booking_quotations,quotation_date,date,NO,CURRENT_DATE
+booking_quotations,version,integer,NO,1
+booking_quotations,booking_type,text,NO,null
+booking_quotations,primary_booking_id,bigint,NO,null
+booking_quotations,booking_ids,ARRAY,NO,null
+booking_quotations,user_id,bigint,NO,null
+booking_quotations,quotation_payload,jsonb,NO,null
+bookings,id,bigint,NO,null
+bookings,user_id,bigint,NO,null
+bookings,booking_date,date,YES,null
+bookings,requester_contact,text,YES,null
+bookings,requester_faculty,text,YES,null
+bookings,requester_identifier,text,YES,null
+bookings,vot_number,text,YES,null
+bookings,final_total_price,numeric,YES,0
+bookings,request_details,text,YES,null
+bookings,token,text,YES,null
+bookings,overall_status,text,NO,'pending'::text
+bookings,created_at,timestamp with time zone,NO,now()
+bookings,updated_at,timestamp with time zone,YES,null
+bookings,study_level,text,YES,null
+bookings,lect_name,text,YES,null
+bookings,lect_email,text,YES,null
+bookings,lect_contact,text,YES,null
+bookings,pic_email,text,YES,null
+bookings,pic_name,text,YES,null
+bookings,lect_faculty,text,YES,null
+bookings,lect_id,text,YES,null
+equipment,id,text,NO,null
+equipment,name,text,NO,null
+equipment,description,text,YES,null
+equipment,location,text,YES,null
+equipment,status,text,YES,null
+equipment,price_per_hour,integer,YES,null
+equipment,course,text,YES,null
+equipment,created_at,timestamp without time zone,YES,now()
+equipment,quantity,integer,YES,null
+equipment,lab_id,text,YES,null
+equipment,staff_name,text,YES,null
+equipment,staff_email,text,YES,null
+equipment,staff_contact,text,YES,null
+equipment_bookings,id,bigint,NO,null
+equipment_bookings,booking_id,bigint,NO,null
+equipment_bookings,equipment_id,text,NO,null
+equipment_bookings,lab_id,text,NO,null
+equipment_bookings,start_time,time without time zone,NO,null
+equipment_bookings,end_time,time without time zone,NO,null
+equipment_bookings,booking_reason,text,YES,null
+equipment_bookings,status,text,NO,'pending'::text
+equipment_bookings,total_price,numeric,YES,0
+equipment_bookings,created_at,timestamp with time zone,NO,now()
+equipment_bookings,start_date,date,YES,null
+equipment_bookings,end_date,date,YES,null
+equipment_bookings,new_total_price,bigint,YES,null
+labs,id,text,NO,null
+labs,name,text,NO,null
+labs,description,text,YES,null
+labs,location,text,YES,null
+labs,price_per_hour,integer,YES,null
+labs,course,text,YES,null
+labs,created_at,timestamp without time zone,YES,now()
+labs,staff_name,text,YES,null
+labs,staff_email,text,YES,null
+labs,staff_contact,text,YES,null
+labs,status,text,YES,'available'::text
+pic_tokens,id,bigint,NO,null
+pic_tokens,created_at,timestamp with time zone,NO,now()
+pic_tokens,expires_at,timestamp with time zone,NO,null
+pic_tokens,assigned_to,bigint,NO,null
+pic_tokens,assigned_by,bigint,NO,null
+pic_tokens,token,text,NO,null
+pic_tokens,manual_expire,boolean,NO,false
+users,id,bigint,NO,null
+users,created_at,timestamp with time zone,NO,now()
+users,username,character varying,NO,null
+users,email,character varying,NO,null
+users,role,character varying,NO,null
+users,verified,boolean,NO,false
+users,verification_expiry,timestamp with time zone,YES,null
