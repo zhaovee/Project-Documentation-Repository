@@ -27,7 +27,7 @@ This documentation repository contains project documents, diagrams, database des
 | Muhammad Usman | Project Manager |
 | Zhao Wei | Team Member |
 | Abdulrahman Siad | Team Member |
-| Muhammad Syafi | Team Member |
+| Syafi | Team Member |
 | Adam Iskandar | Team Member |
 
 ## Related Links
