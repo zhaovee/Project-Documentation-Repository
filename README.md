@@ -34,40 +34,40 @@ This documentation repository contains project documents, diagrams, database des
 
 | Item | Link |
 |---|---|
-| Code Repository | `<paste code repository link here>` |
-| Database / Supabase | `<paste database link here>` |
-| Documentation Repository | `<paste documentation repository link here>` |
+| Code Repository | https://github.com/KaifHalak/AD-Project |
+
 
 ## Project Structure
 
 ```text
-AD-Project-Documentation/
-├── documents/
-│   ├── final-report.docx
-│   ├── proposal.docx
-│   └── UAT.xlsx
-│
-├── diagrams/
-│   ├── use-case-diagram.png
-│   ├── system-architecture.drawio
-│   ├── system-architecture.png
-│   ├── erd.drawio
-│   └── erd.png
-│
-├── database/
-│   ├── database-schema.sql
-│   └── table-descriptions.md
-│
-├── screenshots/
-│   ├── register-page.png
-│   ├── login-page.png
-│   ├── browse-lab-page.png
-│   ├── booking-request-page.png
-│   ├── booking-record-page.png
-│   ├── pic-token-page.png
-│   ├── unit-leader-review-page.png
-│   ├── ppmu-review-page.png
-│   └── manage-equipment-page.png
-│
+AD-Project/
+├── public/
+├── scripts/
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   ├── bookings/
+│   │   │   ├── pic/
+│   │   │   ├── ppmu/
+│   │   │   ├── tokens/
+│   │   │   ├── unit-leader/
+│   │   │   └── users/
+│   │   ├── account/
+│   │   ├── booking/
+│   │   ├── booking-records/
+│   │   ├── complete-booking/
+│   │   ├── forgot-password/
+│   │   ├── PPMU/
+│   │   ├── register/
+│   │   ├── reset-password/
+│   │   ├── token-verification/
+│   │   └── unit-leader/
+│   ├── components/
+│   └── lib/
+├── supabase/
+│   └── migrations/
+├── tools/
+├── package.json
 └── README.md
 ```
