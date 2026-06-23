@@ -87,19 +87,34 @@ The database schema and ERD are included in the project documentation.
 ```text
 AD-Project/
 ├── public/
+├── scripts/
 ├── src/
 │   ├── app/
 │   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   ├── bookings/
+│   │   │   ├── pic/
+│   │   │   ├── ppmu/
+│   │   │   ├── tokens/
+│   │   │   ├── unit-leader/
+│   │   │   └── users/
+│   │   ├── account/
 │   │   ├── booking/
 │   │   ├── booking-records/
 │   │   ├── complete-booking/
-│   │   ├── pic/
+│   │   ├── forgot-password/
 │   │   ├── unit-leader/
-│   │   └── PPMU/
+│   │   ├── PPMU/
+│   │   ├── register/
+│   │   ├── reset-password/
+│   │   └── token-verification/
 │   ├── components/
 │   └── lib/
 ├── supabase/
 │   └── migrations/
+├── tools/
+├── work_docs/
+├── outputs/
 ├── package.json
 └── README.md
 ```
